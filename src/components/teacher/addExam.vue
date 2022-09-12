@@ -63,7 +63,7 @@ export default {
   },
   methods: {
     formatTime(date) { //日期格式化
-      let year = date.getFullYear()
+      let year = date.getFullYear();
       let month= date.getMonth()+ 1 < 10 ? "0" + (date.getMonth() + 1) : date.getMonth() + 1;
       let day=date.getDate() < 10 ? "0" + date.getDate() : date.getDate();
       let hours=date.getHours() < 10 ? "0" + date.getHours() : date.getHours();
@@ -97,7 +97,7 @@ export default {
     cancel() { //取消按钮
       this.form = {}
     },
-    
+
   }
 };
 </script>
